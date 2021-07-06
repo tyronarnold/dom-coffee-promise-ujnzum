@@ -26,7 +26,7 @@ class CoffeMachine {
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(this.maker+' Coffee is Ground!');
-        this.coffeeAnimate(" Coffee is Ground.","80px","visible","visible")
+        this.coffeeAnimate(this.maker+" Coffee is Ground.","80px","visible","visible")
       }, 4000);
     })
 
@@ -49,7 +49,7 @@ class CoffeMachine {
 
     setTimeout(() => {
       console.log('Your '+this.maker+' Coffee is READY!');
-      this.coffeeAnimate(" Coffee is Ready!","40px","visible","visible")
+      this.coffeeAnimate(this.maker+" Coffee is Ready!","40px","visible","visible")
     }, 6000);
   });
 
@@ -60,7 +60,7 @@ class CoffeMachine {
   }
 
   coffeeAnimate(message,progess,visable,visable2){
-    document.getElementById("message").innerHTML = this.maker+message;
+    document.getElementById("message").innerHTML = message;
     var foam = document.querySelector(".foam-line");
     foam.style.height = progess;
     foam.style.visibility = visable;
