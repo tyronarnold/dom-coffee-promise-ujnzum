@@ -13,7 +13,7 @@ class CoffeMachine {
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve('Water is Heated!');
-        coffeeAnimate(" The Water has Heated.","110px","visible","visible")
+        this.coffeeAnimate(" The Water has Heated.","110px","visible","visible")
       }, 3000);
     })
 
@@ -26,7 +26,7 @@ class CoffeMachine {
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(this.maker+' Coffee is Ground!');
-        coffeeAnimate(" Coffee is Ground.","80px","visible","visible")
+        this.coffeeAnimate(" Coffee is Ground.","80px","visible","visible")
       }, 4000);
     })
 
@@ -50,7 +50,7 @@ class CoffeMachine {
 
     setTimeout(() => {
       console.log('Your '+this.maker+' Coffee is READY!');
-      coffeeAnimate(" Coffee is Ready!","40px","visible","visible")
+      this.coffeeAnimate(" Coffee is Ready!","40px","visible","visible")
     }, 6000);
   });
 
