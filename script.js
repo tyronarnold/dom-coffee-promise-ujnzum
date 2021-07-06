@@ -36,7 +36,6 @@ class CoffeMachine {
 
   }
 
-
   brewCoffee() {
 
     var foam = document.querySelector(".foam-line");
