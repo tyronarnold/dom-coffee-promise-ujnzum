@@ -8,7 +8,7 @@ class CoffeMachine {
   // whater Heater()
   waterHeater() {
     
-    coffeeAnimate(" The Water is Heating..","130px","visible","visible")
+    this.coffeeAnimate(" The Water is Heating..","130px","visible","visible")
 
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -60,8 +60,6 @@ class CoffeMachine {
 
   }
 
-
-
   coffeeAnimate(message,progess,visable,visable2){
     document.getElementById("message").innerHTML = this.maker+message;
     var foam = document.querySelector(".foam-line");
@@ -70,8 +68,6 @@ class CoffeMachine {
     var foam = document.querySelector(".coffee");
     foam.style.visibility = visable2;
   }
-
-
 
 }
 
