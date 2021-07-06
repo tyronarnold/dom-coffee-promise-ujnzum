@@ -62,13 +62,13 @@ class CoffeMachine {
 
 
 
-  coffeeAnimate(message,progess,visable,visable){
+  coffeeAnimate(message,progess,visable,visable2){
     document.getElementById("message").innerHTML = this.maker+message;
     var foam = document.querySelector(".foam-line");
     foam.style.height = progess;
     foam.style.visibility = visable;
     var foam = document.querySelector(".coffee");
-    foam.style.visibility = visable;
+    foam.style.visibility = visable2;
   }
 
 
